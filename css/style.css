@@ -332,6 +332,7 @@ input.active:focus {
 .form_submit {
 	text-align: center;
 	width: 80%;
+    	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	justify-content: center;
