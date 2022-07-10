@@ -1,5 +1,6 @@
 <?php
-
+@ob_start();
+session_start();
 // подключаем файлы ядра
 require_once 'core/model.php';
 require_once 'core/view.php';

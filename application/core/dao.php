@@ -6,6 +6,8 @@ class Dao extends dbconnect {
     public function __construct() { 
        $dbcon = new parent(); 
        $this->conn = $dbcon->connect();
+       mysqli_query($this->conn, "SET NAMES UTF8");
+       mysqli_query($this->conn, "SET CHARACTER SET UTF8");
     }
 
     public function select( $table , $where='' , $other='' ){
